@@ -1,7 +1,7 @@
 {
   "name": "house-market",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": ".",
   "dependencies": {
     "@supabase/supabase-js": "^2.46.2",

@@ -7,6 +7,8 @@ import { db } from '../firebase.config';
 import { setDoc, doc, serverTimestamp } from 'firebase/firestore';
 import { toast } from 'react-toastify';
 import OAuth from '../components/OAuth';
+import Badgeicon from '../assets/badgeicon.png'; // Updated to PNG
+
 
 function SignUp() {
   const [showPassword, setShowPassword] = useState(false);
@@ -61,14 +63,22 @@ function SignUp() {
         </header>
         <main>
           <form onSubmit={onSubmit}>
-            <input
+          <input
               type="text"
               className="nameInput"
               placeholder="Name"
               id="name"
               value={name}
               onChange={onChange}
+              style={{
+                backgroundImage: {Badgeicon},
+                backgroundSize: '20px',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: '2.5%',
+                paddingLeft: '6%',
+              }}
             />
+
             <input
               type="email"
               className="emailInput"

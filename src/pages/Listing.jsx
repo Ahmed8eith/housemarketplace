@@ -4,7 +4,7 @@ import { getDoc, doc } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 import { db } from '../firebase.config';
 import Spinner from '../assets/Spinner.gif';
-import shareIcon from '../assets/svg/._shareIcon.svg';
+import shareIcon from '../assets/share.png';
 import Slider from 'react-slick'; // Import React-Slick
 import 'slick-carousel/slick/slick.css'; // Slick styles
 import 'slick-carousel/slick/slick-theme.css'; // Slick theme

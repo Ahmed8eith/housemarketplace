@@ -4,7 +4,7 @@ import { getAuth,signInWithPopup,GoogleAuthProvider } from 'firebase/auth'
 import { doc,setDoc,getDoc, serverTimestamp } from 'firebase/firestore'
 import { auth, db } from '../firebase.config'
 import { toast } from 'react-toastify'
-import googleIcon from '../assets/svg/._googleIcon.svg'
+import googleIcon from '../assets/google.png'
 
 function OAuth() {
     const onGoogleClick=async()=>{

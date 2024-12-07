@@ -191,12 +191,13 @@ button {
 
 .nameInput {
   margin-bottom: 2rem;
-  background: url('./assets/svg/._badgeIcon.svg') #ffffff 2.5% center no-repeat;
+  background: url('./assets/badgeicon.png') #ffffff 2.5% center no-repeat;
 }
 
 .emailInput {
   margin-bottom: 2rem;
-  background: url('./assets/svg/._personIcon.svg') #ffffff 2.5% center no-repeat;
+  background: url('./assets/person.png') #ffffff 2.5% center no-repeat;
+  background-size: 20px;
 }
 
 .passwordInputDiv {
@@ -205,16 +206,22 @@ button {
 
 .passwordInput {
   margin-bottom: 2rem;
-  background: url('C:\Users\Ali 8eith\house-market\src\assets\svg\._lockIcon.svg') #ffffff 2.5% center no-repeat;
+  background: url('./assets/lock.png') #ffffff 2.5% center no-repeat;
+  background-size: 20px; /* Adjust size as needed */
 }
+
 
 .showPassword {
   cursor: pointer;
   position: absolute;
-  top: -4%;
-  right: 1%;
-  padding: 1rem;
+  top: 18%; /* Adjust for better alignment */
+  right: 2%;
+  width: 20px; /* Adjust the width to your preference */
+  height: 20px; /* Adjust the height to your preference */
+  padding: 30; /* Remove padding to prevent it from affecting size */
+  background-size: 20px;
 }
+
 
 .forgotPasswordLink {
   cursor: pointer;
@@ -499,12 +506,21 @@ button {
   z-index: 2;
   background-color: #ffffff;
   border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
+  width: 2rem; /* Adjust the size */
+  height: 2rem; /* Adjust the size */
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden; /* Ensure the child icon fits within the container */
 }
+
+.shareIconDiv img {
+  width: 1.5rem; /* Size of the icon inside the div */
+  height: 1.5rem;
+  padding-right: 10%;
+}
+
+
 
 .listingName {
   font-weight: 600;
@@ -825,3 +841,17 @@ button {
   opacity: 0.75;
 }
 
+
+.createListing {
+  display: flex;
+  align-items: center; /* Align text and icons vertically */
+  gap: 0.5rem; /* Add spacing between elements */
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Use inherited text color */
+}
+
+.createListing img {
+  width: 24px; /* Adjust the size of icons */
+  height: 24px; /* Adjust the size of icons */
+  object-fit: contain; /* Ensures the image is not distorted */
+}

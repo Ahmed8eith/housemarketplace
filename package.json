@@ -2,7 +2,7 @@
   "name": "house-market",
   "version": "0.1.0",
   "private": false,
-  "homepage": ".",
+"homepage": "https://example.netlify.app",
   "dependencies": {
     "@supabase/supabase-js": "^2.46.2",
     "@testing-library/jest-dom": "^5.17.0",
